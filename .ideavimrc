@@ -44,7 +44,9 @@ inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 
 
-"make editor panel full screen (Default = Ctrl + Shift + F12) Intellij
+"toggle fullscreen mode
+nmap <Leader>fs <action>(ToggleFullScreen)
+"Hide all windows Intellij
 nmap <Leader>ff <action>(HideAllWindows)
 "Show Panels / Windows
 nmap <Leader>fp <action>(ActivateProjectToolWindow)
