@@ -76,3 +76,6 @@ nmap <Leader>j <action>(PreviousTab)
 nmap <Leader>x <action>(CloseContent)
 "move tab to right Intellij
 nmap <Leader><S-l> <action>(MoveTabRight)
+
+"Toggle soft wrap Intellij
+nmap <leader>sw <action>(EditorToggleUseSoftWraps)
