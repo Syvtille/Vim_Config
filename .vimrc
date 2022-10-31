@@ -10,8 +10,10 @@ map H ^
 nnoremap ù %
 nnoremap z w
 onoremap z w
+vnoremap z w
 nnoremap Z W
 onoremap Z W
+vnoremap Z W
 nnoremap w zz
 
 "center cursor after scroll
