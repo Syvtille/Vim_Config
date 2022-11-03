@@ -24,7 +24,7 @@ nmap <C-u> <C-u>w
 nnoremap <Leader>r *:%s//
 
 "règle cette faute de merde
-inoremap <C-d> <Esc>bhxhi<Space><Esc>ea
+inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
 
 "surround current word with quotes
 nmap <Leader>o" ysiw"
