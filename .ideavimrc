@@ -17,8 +17,8 @@ vnoremap Z W
 nnoremap w zz
 
 "center cursor after scroll
-nmap <C-d> <C-d>w
-nmap <C-u> <C-u>w
+nmap <C-d> <C-d>w<C-e>
+nmap <C-u> <C-u>w<C-y>
  
 " replace the word under cursor in all file
 nnoremap <Leader>r *:%s//
