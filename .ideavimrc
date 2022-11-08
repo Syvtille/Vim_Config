@@ -2,6 +2,7 @@ let mapleader = " "
 set surround
 set commentary
 set sneak
+Plug 'easymotion/vim-easymotion'
 
 nnoremap <c-c> "+y
 nnoremap <c-v> "+p
