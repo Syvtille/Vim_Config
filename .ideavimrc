@@ -4,6 +4,8 @@ set commentary
 set sneak
 Plug 'easymotion/vim-easymotion'
 
+map <Leader>s <Plug>(easymotion-s)
+
 nnoremap <c-c> "+y
 nnoremap <c-v> "+p
 
@@ -89,4 +91,4 @@ nmap <Leader>x <action>(CloseContent)
 nmap <Leader><S-l> <action>(MoveTabRight)
 
 "Toggle soft wrap Intellij
-nmap <leader>sw <action>(EditorToggleUseSoftWraps)
+nmap <Leader>< <action>(EditorToggleUseSoftWraps)
