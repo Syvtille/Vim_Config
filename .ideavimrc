@@ -3,6 +3,7 @@ set surround
 set commentary
 set sneak
 Plug 'easymotion/vim-easymotion'
+Plug 'preservim/nerdtree'
 
 map <Leader>s <Plug>(easymotion-s)
 
