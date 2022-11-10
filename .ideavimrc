@@ -69,6 +69,9 @@ nmap <Leader>ft <action>(ActivateTerminalToolWindow)
 nmap <Leader>fd <action>(ActivateDebugToolWindow)
 nmap <Leader>fi <action>(ActivateProblemsViewToolWindow)
 
+" focus current file in project window
+nmap <Leader>! <action>(SelectInProjectView)
+
 " go to next or previous tab
 nmap <Leader><S-k> :bn<CR>
 nmap <Leader><S-j> :bp<CR>
