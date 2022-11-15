@@ -63,9 +63,12 @@ nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 
-" Go to current method up or down IntelliJ
-nmap <Leader>u <action>(MethodUp)
+" Go to method up or down IntelliJ
+nmap <Leader>p <action>(MethodUp)
 nmap <Leader>n <action>(MethodDown)
+
+" Go to begining of current method
+nmap <Leader>u [m
 
 " RenameFile IntelliJ
 nmap èr <action>(RenameFile)
