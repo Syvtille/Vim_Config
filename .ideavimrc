@@ -6,6 +6,22 @@ Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
 Plug 'michaeljsmith/vim-indent-object'
 
+"Show the mode vim is in at the bottom of the screen
+set showmode
+
+" Ignore case when searching
+set ignorecase
+" Smart case
+set smartcase
+" Set incremental search
+set incsearch
+"Show matching bracket the cursor is on
+set showmatch
+" No annoying sound on errors
+set visualbell
+set t_vb=
+set tm=500
+
 map <Leader>s <Plug>(easymotion-s)
 
 nnoremap <c-c> "+y
@@ -39,17 +55,6 @@ nnoremap <Leader>r *:%s//
 "règle cette faute de merde
 inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
 
-"surround current word with quotes
-nmap <Leader>o" ysiw"
-nmap <Leader>o' ysiw'
-"unquote current quote
-nmap <Leader>u' ds'
-nmap <Leader>u" ds"
-" switch single quotes to double quotes
-nmap <Leader>i" cs'"
-nmap <Leader>i' cs"'
-
-
 " autoindent all file
 nnoremap <Leader>² gg=G<c-o>
 
@@ -58,6 +63,12 @@ nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 
+" Go to current method up or down IntelliJ
+nmap <Leader>u <action>(MethodUp)
+nmap <Leader>n <action>(MethodDown)
+
+" RenameFile IntelliJ
+nmap èr <action>(RenameFile)
 
 "toggle fullscreen mode
 nmap <Leader>fs <action>(ToggleFullScreen)
