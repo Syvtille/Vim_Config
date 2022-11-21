@@ -56,7 +56,7 @@ nnoremap <Leader>r *:%s//
 inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
 
 " autoindent all file
-nnoremap <Leader>² gg=G<c-o>
+nnoremap <Leader>² gg=G<c-o>zz
 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
