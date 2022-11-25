@@ -24,6 +24,9 @@ set tm=5000
 
 map <Leader>s <Plug>(easymotion-s)
 
+"enter visual block
+nnoremap <Leader>v <c-v>
+
 nnoremap <c-c> "+y
 nnoremap <c-v> "+p
 vnoremap <c-c> "+y
