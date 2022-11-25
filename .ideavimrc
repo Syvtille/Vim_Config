@@ -20,12 +20,16 @@ set showmatch
 " No annoying sound on errors
 set visualbell
 set t_vb=
-set tm=500
+set tm=5000
 
 map <Leader>s <Plug>(easymotion-s)
 
 nnoremap <c-c> "+y
 nnoremap <c-v> "+p
+vnoremap <c-c> "+y
+vnoremap <c-v> "+p
+inoremap <c-c> <Esc>"+ya
+inoremap <c-v> <Esc>"+pa
 
 map L $
 map H ^
