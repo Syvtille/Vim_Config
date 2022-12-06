@@ -59,6 +59,10 @@ nmap <C-b> <C-b>jw
 " replace the word under cursor in all file
 nnoremap <Leader>r *:%s//
 
+"add ; at the end of line
+inoremap <c-;> <esc>A;
+nnoremap <c-;> A;<esc>
+
 "règle cette faute de merde
 inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
 
