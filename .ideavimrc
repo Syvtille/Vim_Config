@@ -122,3 +122,9 @@ nmap <Leader><S-l> <action>(MoveTabRight)
 
 "Toggle soft wrap Intellij
 nmap <Leader>< <action>(EditorToggleUseSoftWraps)
+
+1
+1
+1
+1
+1

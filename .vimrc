@@ -36,6 +36,7 @@ nmap <Leader>u" ds"
 nmap <Leader>i" cs'"
 nmap <Leader>i' cs"'
 
+nnoremap <Leader>v <c-v>
 
 " autoindent all file
 nnoremap <Leader>² gg=G<c-o>
