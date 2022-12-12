@@ -34,6 +34,9 @@ vnoremap <c-v> "+p
 inoremap <c-c> <Esc>"+ya
 inoremap <c-v> <Esc>"+pa
 
+"map record marco to à
+nnoremap à q
+
 map L $
 map H ^
 nnoremap ù %
