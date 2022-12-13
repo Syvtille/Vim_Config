@@ -26,6 +26,11 @@ set tm=5000
 nmap <Leader><Leader>* :source ~/.ideavimrc<CR>
 
 nnoremap <Up> :<up>
+nnoremap <Left> :<up>
+inoremap <Up> <esc>:<up>
+inoremap <Left> <esc>:<up>
+vnoremap <Up> :<up>
+vnoremap <Left> :<up>
 
 map <Leader>s <Plug>(easymotion-s)
 
@@ -53,6 +58,10 @@ onoremap Z W
 vnoremap Z W
 nnoremap w zz
 
+"windows save
+nnoremap <c-s> :w<CR>
+inoremap <c-s> <Esc>:w<CR>
+vnoremap <c-s> :w<CR>
 
 "delete + insert mode
 nmap q xi
