@@ -22,6 +22,9 @@ set visualbell
 set t_vb=
 set tm=5000
 
+" source ideavimrc
+nmap <Leader><Leader>* :source ~/.ideavimrc<CR>
+
 map <Leader>s <Plug>(easymotion-s)
 
 "enter visual block
