@@ -80,6 +80,10 @@ nnoremap <Leader>r *:%s//
 inoremap <c-;> <esc>A;
 nnoremap <c-;> A;<esc>
 
+"indent in insert mode
+inoremap <a-h> <esc><<A
+inoremap <a-l> <esc>>>A
+
 "règle cette faute de merde
 inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
 
