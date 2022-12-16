@@ -80,9 +80,11 @@ nnoremap <Leader>r *:%s//
 inoremap <c-;> <esc>A;
 nnoremap <c-;> A;<esc>
 
-"indent in insert mode
+" better indent
 inoremap <a-h> <esc><<A
 inoremap <a-l> <esc>>>A
+nnoremap <a-h> <<
+nnoremap <a-l> >>
 
 "règle cette faute de merde
 inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
