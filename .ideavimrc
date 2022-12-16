@@ -60,11 +60,11 @@ nnoremap w zz
 
 "windows save
 nnoremap <c-s> :w<CR>
-inoremap <c-s> <Esc>:w<CR>
+inoremap <c-s> <Esc>:w<CR>gi
 vnoremap <c-s> :w<CR>
 
-"delete + insert mode
-nmap q xi
+" map s to q
+nmap q a<BS>
 
 "center cursor after scroll
 nmap <C-d> <C-d>kw
