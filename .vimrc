@@ -2,6 +2,9 @@ let mapleader = " "
 set surround
 set commentary
 
+"enter visual block
+nnoremap <Leader>v <c-v>
+
 nnoremap <c-c> "+y
 nnoremap <c-v> "+p
 
@@ -15,6 +18,11 @@ nnoremap Z W
 onoremap Z W
 vnoremap Z W
 nnoremap w zz
+
+"windows save
+nnoremap <c-s> :w<CR>
+inoremap <c-s> <Esc>:w<CR>gi
+vnoremap <c-s> :w<CR>
 
 "center cursor after scroll
 nmap <C-d> <C-d>w
