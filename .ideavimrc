@@ -85,6 +85,8 @@ inoremap <a-h> <esc><<A
 inoremap <a-l> <esc>>>A
 nnoremap <a-h> <<
 nnoremap <a-l> >>
+vnoremap <a-l> >gv
+vnoremap <a-h> <gv
 
 "règle cette faute de merde
 inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
