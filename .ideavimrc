@@ -112,10 +112,11 @@ nmap <Leader>u [m
 nmap èr <action>(RenameFile)
 
 "toggle fullscreen mode
-nmap <Leader>fs <action>(ToggleFullScreen)
+nmap ès <action>(ToggleFullScreen)
 "Hide all windows Intellij
 nmap <Leader>ff <action>(HideAllWindows)
 "Show Panels / Windows Intellij
+nmap <Leader>fs <action>(ActivateSonarLintToolWindow)
 nmap <Leader>fc <action>(ActivateCommitToolWindow)
 nmap <Leader>fp <action>(ActivateProjectToolWindow)
 nmap <Leader>fr <action>(ActivateRunToolWindow)
