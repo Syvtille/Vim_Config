@@ -127,6 +127,8 @@ nmap <Leader>fi <action>(ActivateProblemsViewToolWindow)
 " Expandable
 nmap <C-k> <action>(CollapseRegion)
 nmap <C-j> <action>(ExpandRegion)
+nmap <C-A-k> <action>(CollapseAllRegions)
+nmap <C-A-j> <action>(ExpandAllRegions)
 
 " focus current file in project window
 nmap <Leader>! <action>(SelectInProjectView)
