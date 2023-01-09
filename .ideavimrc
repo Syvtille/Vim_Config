@@ -59,9 +59,9 @@ vnoremap Z W
 nnoremap w zz
 
 "windows save
-nnoremap <c-s> :w<CR>
-inoremap <c-s> <Esc>:w<CR>gi
-vnoremap <c-s> :w<CR>
+nmap <c-s> <action>(SaveAll)
+imap <c-s> <action>(SaveAll)
+vmap <c-s> <action>(SaveAll)
 
 " map s to q
 nmap q a<BS>
