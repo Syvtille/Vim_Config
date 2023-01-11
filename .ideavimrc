@@ -6,6 +6,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
 Plug 'michaeljsmith/vim-indent-object'
 
+set ideajoin
+
 "Show the mode vim is in at the bottom of the screen
 set showmode
 
@@ -123,6 +125,13 @@ nmap <Leader>fr <action>(ActivateRunToolWindow)
 nmap <Leader>ft <action>(ActivateTerminalToolWindow)
 nmap <Leader>fd <action>(ActivateDebugToolWindow)
 nmap <Leader>fi <action>(ActivateProblemsViewToolWindow)
+
+" Recents
+nmap <C-A-V> <action>(RecentChangedFiles)
+nmap <C-A-C> <action>(RecentChanges)
+nmap <C-A-F> <action>(RecentFiles)
+nmap <C-A-L> <action>(RecentLocations)
+nmap <C-A-P> <action>(RecentProjectListGroup)
 
 " Expandable
 nmap <C-k> <action>(CollapseRegion)
