@@ -48,6 +48,8 @@ inoremap <c-v> <Esc>"+pa
 
 "map record marco to à
 nnoremap à q
+"map mark jump to _
+nnoremap ` _
 
 map L $
 map H ^
