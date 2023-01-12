@@ -113,8 +113,10 @@ nmap <Leader>n <action>(MethodDown)
 " Go to begining of current method
 nmap <Leader>u [m
 
+" RenameElement IntelliJ
+nmap _r <action>(RenameElement)
 " RenameFile IntelliJ
-nmap _r <action>(RenameFile)
+nmap _R <action>(RenameFile)
 
 "toggle fullscreen mode
 nmap _s <action>(ToggleFullScreen)
