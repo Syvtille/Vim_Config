@@ -132,6 +132,7 @@ nmap <Leader>fd <action>(ActivateDebugToolWindow)
 nmap <Leader>fi <action>(ActivateProblemsViewToolWindow)
 
 " Recents
+nmap <C-S-T> <action>(ReopenClosedTab)
 nmap <C-A-V> <action>(RecentChangedFiles)
 nmap <C-A-C> <action>(RecentChanges)
 nmap <C-A-F> <action>(RecentFiles)
