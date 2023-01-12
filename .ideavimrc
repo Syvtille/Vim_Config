@@ -48,8 +48,9 @@ inoremap <c-v> <Esc>"+pa
 
 "map record marco to à
 nnoremap à q
-"map mark jump to _
-nnoremap ` _
+"map mark jump to è
+nnoremap è `
+onoremap è `
 
 map L $
 map H ^
@@ -113,10 +114,10 @@ nmap <Leader>n <action>(MethodDown)
 nmap <Leader>u [m
 
 " RenameFile IntelliJ
-nmap èr <action>(RenameFile)
+nmap _r <action>(RenameFile)
 
 "toggle fullscreen mode
-nmap ès <action>(ToggleFullScreen)
+nmap _s <action>(ToggleFullScreen)
 "Hide all windows Intellij
 nmap <Leader>ff <action>(HideAllWindows)
 "Show Panels / Windows Intellij
