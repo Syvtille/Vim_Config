@@ -106,6 +106,9 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
+" Clear notifications"
+nmap _n <action>(ClearAllNotifications)
+
 " Go to method up or down IntelliJ
 nmap <Leader>p <action>(MethodUp)
 nmap <Leader>n <action>(MethodDown)
@@ -138,6 +141,18 @@ nmap <C-A-C> <action>(RecentChanges)
 nmap <C-A-F> <action>(RecentFiles)
 nmap <C-A-L> <action>(RecentLocations)
 nmap <C-A-P> <action>(RecentProjectListGroup)
+imap <C-S-T> <action>(ReopenClosedTab)
+imap <C-A-V> <action>(RecentChangedFiles)
+imap <C-A-C> <action>(RecentChanges)
+imap <C-A-F> <action>(RecentFiles)
+imap <C-A-L> <action>(RecentLocations)
+imap <C-A-P> <action>(RecentProjectListGroup)
+vmap <C-S-T> <action>(ReopenClosedTab)
+vmap <C-A-V> <action>(RecentChangedFiles)
+vmap <C-A-C> <action>(RecentChanges)
+vmap <C-A-F> <action>(RecentFiles)
+vmap <C-A-L> <action>(RecentLocations)
+vmap <C-A-P> <action>(RecentProjectListGroup)
 
 " Expandable
 nmap <C-k> <action>(CollapseRegion)
