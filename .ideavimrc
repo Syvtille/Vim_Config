@@ -27,13 +27,6 @@ set tm=5000
 " source ideavimrc
 nmap <Leader><Leader>* :source ~/.ideavimrc<CR>
 
-nnoremap <Up> :<up>
-nnoremap <Left> :<up>
-inoremap <Up> <esc>:<up>
-inoremap <Left> <esc>:<up>
-vnoremap <Up> :<up>
-vnoremap <Left> :<up>
-
 map <Leader>s <Plug>(easymotion-s)
 
 "enter visual block
