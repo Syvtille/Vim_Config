@@ -6,6 +6,9 @@ Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
 Plug 'michaeljsmith/vim-indent-object'
 
+set relativenumber
+set number
+
 set ideajoin
 
 "Show the mode vim is in at the bottom of the screen
