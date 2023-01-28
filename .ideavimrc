@@ -6,6 +6,9 @@ Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
 Plug 'michaeljsmith/vim-indent-object'
 
+" source ideavimrc
+nnoremap <Leader><Leader>* :source ~/.ideavimrc<CR>
+
 set relativenumber
 set number
 
@@ -27,8 +30,6 @@ set visualbell
 set t_vb=
 set tm=5000
 
-" source ideavimrc
-nmap <Leader><Leader>* :source ~/.ideavimrc<CR>
 
 map <Leader>s <Plug>(easymotion-s)
 
@@ -116,6 +117,10 @@ nmap <Leader>u [m
 nmap _r <action>(RenameElement)
 " RenameFile IntelliJ
 nmap _R <action>(RenameFile)
+
+" Last changes
+nmap g, <action>(JumpToLastChange)
+nmap g; <action>(JumpToNextChange)
 
 "toggle fullscreen mode
 nmap _s <action>(ToggleFullScreen)
