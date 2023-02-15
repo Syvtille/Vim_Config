@@ -128,6 +128,7 @@ nmap _s <action>(ToggleFullScreen)
 nmap <Leader>ff <action>(HideAllWindows)
 "Show Panels / Windows Intellij
 nmap <Leader>fs <action>(ActivateSonarLintToolWindow)
+nmap <Leader>fg <action>(ActivateVersionControlToolWindow)
 nmap <Leader>fc <action>(ActivateCommitToolWindow)
 nmap <Leader>fp <action>(ActivateProjectToolWindow)
 nmap <Leader>fr <action>(ActivateRunToolWindow)
