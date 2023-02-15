@@ -81,8 +81,10 @@ nnoremap <Leader>r *:%s//
 "add thing at the end of line
 inoremap <c-;> <esc>A;
 nnoremap <c-;> A;<esc>
-inoremap <c-'> <esc>A{
-nnoremap <c-'> A{<esc>
+inoremap <c-4> <esc>A{
+nnoremap <c-4> A{<esc>
+inoremap <c-5> <esc>A(
+nnoremap <c-5> A(<esc>
 
 " better indent
 inoremap <a-h> <esc><<A
