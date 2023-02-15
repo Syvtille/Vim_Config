@@ -78,9 +78,11 @@ nmap <C-b> <C-b>jw
 " replace the word under cursor in all file
 nnoremap <Leader>r *:%s//
 
-"add ; at the end of line
+"add thing at the end of line
 inoremap <c-;> <esc>A;
 nnoremap <c-;> A;<esc>
+inoremap <c-'> <esc>A{
+nnoremap <c-'> A{<esc>
 
 " better indent
 inoremap <a-h> <esc><<A
