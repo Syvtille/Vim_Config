@@ -1,3 +1,4 @@
+"needed idea plugins : sneak, TabMover, easymotion
 let mapleader = " "
 set surround
 set commentary
@@ -170,6 +171,9 @@ nmap <C-A-j> <action>(ExpandAllRegions)
 " focus current file in project window
 nmap <Leader>! <action>(SelectInProjectView)
 
+"move tabs Intellij
+nmap <Leader>l <action>(com.mnw.tabmover.actions.MoveTabDownAction)
+nmap <Leader>h <action>(com.mnw.tabmover.actions.MoveTabUpAction)
 " go to next or previous tab
 nmap <Leader><S-k> :bn<CR>
 nmap <Leader><S-j> :bp<CR>
@@ -194,3 +198,8 @@ nmap <Leader><S-l> <action>(MoveTabRight)
 
 "Toggle soft wrap Intellij
 nmap <Leader>< <action>(EditorToggleUseSoftWraps)
+
+"Other TabMovers
+nmap <Leader>H <action>(com.mnw.tabmover.actions.MoveTabToFirstAction)
+nmap <Leader>L <action>(com.mnw.tabmover.actions.MoveTabToLastAction)
+nmap <Leader>tab <action>(com.mnw.tabmover.actions.ShowTabMoveActions)
