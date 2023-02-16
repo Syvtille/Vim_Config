@@ -97,15 +97,16 @@ vnoremap <a-h> <gv
 "règle cette faute de merde
 inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
 
-" autoindent all file
-nnoremap <Leader>² gg=G<c-o>zz
+" reformat file
+nnoremap <Leader>² <action>(ReformatCode)
 
-nnoremap <A-j> :action MoveLineDown<cr>
-nnoremap <A-k> :action MoveLineUp<cr>
-inoremap <A-j> <esc>:action MoveLineDown<cr>a
-inoremap <A-k> <esc>:action MoveLineUp<cr>a
-vnoremap <A-j> :<bs><bs><bs><bs><bs>action MoveLineDown<cr>
-vnoremap <A-k> :<bs><bs><bs><bs><bs>action MoveLineUp<cr>
+" move lines up and down
+nnoremap <A-j> :action MoveLineDown<cr>:action ReformatCode<cr>
+nnoremap <A-k> :action MoveLineUp<cr>:action ReformatCode<cr>
+inoremap <A-j> <esc>:action MoveLineDown<cr>a<esc>:action ReformatCode<cr>a
+inoremap <A-k> <esc>:action MoveLineUp<cr>a<esc>:action ReformatCode<cr>a
+vnoremap <A-j> :<bs><bs><bs><bs><bs>action MoveLineDown<cr>:<bs><bs><bs><bs><bs>action ReformatCode<cr>
+vnoremap <A-k> :<bs><bs><bs><bs><bs>action MoveLineUp<cr>:<bs><bs><bs><bs><bs>action ReformatCode<cr>
 
 " Clear notifications"
 nmap _n <action>(ClearAllNotifications)
