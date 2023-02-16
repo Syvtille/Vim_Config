@@ -113,7 +113,7 @@ vnoremap <A-k> :<bs><bs><bs><bs><bs>action MoveStatementUp<cr>
 nmap _n <action>(ClearAllNotifications)
 
 " Relaod all Maven Projects
-nmap _relm <action>(Maven.Reimport)
+nmap _m <action>(Maven.Reimport)
 
 " Go to method up or down IntelliJ
 nmap <Leader>p <action>(MethodUp)
