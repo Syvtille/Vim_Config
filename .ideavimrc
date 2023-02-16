@@ -112,6 +112,9 @@ vnoremap <A-k> :<bs><bs><bs><bs><bs>action MoveStatementUp<cr>
 " Clear notifications"
 nmap _n <action>(ClearAllNotifications)
 
+" Relaod all Maven Projects
+nmap _relm <action>(Maven.Reimport)
+
 " Go to method up or down IntelliJ
 nmap <Leader>p <action>(MethodUp)
 nmap <Leader>n <action>(MethodDown)
@@ -174,6 +177,9 @@ nmap <Leader>! <action>(SelectInProjectView)
 "move tabs Intellij
 nmap <Leader>l <action>(com.mnw.tabmover.actions.MoveTabDownAction)
 nmap <Leader>h <action>(com.mnw.tabmover.actions.MoveTabUpAction)
+nmap <Leader>H <action>(com.mnw.tabmover.actions.MoveTabToFirstAction)
+nmap <Leader>L <action>(com.mnw.tabmover.actions.MoveTabToLastAction)
+nmap <Leader>tab <action>(com.mnw.tabmover.actions.ShowTabMoveActions)
 " go to next or previous tab
 nmap <Leader><S-k> :bn<CR>
 nmap <Leader><S-j> :bp<CR>
@@ -198,8 +204,3 @@ nmap <Leader><S-l> <action>(MoveTabRight)
 
 "Toggle soft wrap Intellij
 nmap <Leader>< <action>(EditorToggleUseSoftWraps)
-
-"Other TabMovers
-nmap <Leader>H <action>(com.mnw.tabmover.actions.MoveTabToFirstAction)
-nmap <Leader>L <action>(com.mnw.tabmover.actions.MoveTabToLastAction)
-nmap <Leader>tab <action>(com.mnw.tabmover.actions.ShowTabMoveActions)
