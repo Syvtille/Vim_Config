@@ -102,12 +102,18 @@ inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
 nnoremap <Leader>² <action>(ReformatCode)
 
 " move lines up and down
-nnoremap <A-j> :action MoveStatementDown<cr>
-nnoremap <A-k> :action MoveStatementUp<cr>
-inoremap <A-j> <esc>:action MoveStatementDown<cr>a
-inoremap <A-k> <esc>:action MoveStatementUp<cr>a
-vnoremap <A-j> :<bs><bs><bs><bs><bs>action MoveStatementDown<cr>
-vnoremap <A-k> :<bs><bs><bs><bs><bs>action MoveStatementUp<cr>
+nnoremap <A-S-j> :action MoveStatementDown<cr>
+nnoremap <A-S-k> :action MoveStatementUp<cr>
+inoremap <A-S-j> <esc>:action MoveStatementDown<cr>a
+inoremap <A-S-k> <esc>:action MoveStatementUp<cr>a
+vnoremap <A-S-j> :<bs><bs><bs><bs><bs>action MoveStatementDown<cr>
+vnoremap <A-S-k> :<bs><bs><bs><bs><bs>action MoveStatementUp<cr>
+nnoremap <A-j> :action MoveLineDown<cr>:action ReformatCode<cr>
+nnoremap <A-k> :action MoveLineUp<cr>:action ReformatCode<cr>
+inoremap <A-j> <esc>:action MoveLineDown<cr>a<esc>:action ReformatCode<cr>a
+inoremap <A-k> <esc>:action MoveLineUp<cr>a<esc>:action ReformatCode<cr>a
+vnoremap <A-j> :<bs><bs><bs><bs><bs>action MoveLineDown<cr>:<bs><bs><bs><bs><bs>action ReformatCode<cr>
+vnoremap <A-k> :<bs><bs><bs><bs><bs>action MoveLineUp<cr>:<bs><bs><bs><bs><bs>action ReformatCode<cr>
 
 " Clear notifications"
 nmap _n <action>(ClearAllNotifications)
