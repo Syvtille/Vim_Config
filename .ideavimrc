@@ -151,6 +151,10 @@ nmap <Leader>ft <action>(ActivateTerminalToolWindow)
 nmap <Leader>fd <action>(ActivateDebugToolWindow)
 nmap <Leader>fi <action>(ActivateProblemsViewToolWindow)
 
+"File
+nmap <C-A-S-P> <action>(main.toolbar.Project)
+nmap <C-A-S-N> <action>(NewProject)
+
 " Recents
 nmap <C-S-T> <action>(ReopenClosedTab)
 nmap <C-A-V> <action>(RecentChangedFiles)
