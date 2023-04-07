@@ -44,6 +44,10 @@ vnoremap <c-v> "+p
 inoremap <c-c> <Esc>"+ya
 inoremap <c-v> <Esc>"+pa
 
+"new line
+nnoremap n o<Esc>
+nnoremap N O<Esc>
+
 "map record marco to à
 nnoremap à q
 "map mark jump to è
