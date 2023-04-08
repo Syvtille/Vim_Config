@@ -31,7 +31,6 @@ set visualbell
 set t_vb=
 set tm=5000
 
-
 map <Leader>s <Plug>(easymotion-s)
 
 "enter visual block
@@ -43,10 +42,6 @@ vnoremap <c-c> "+y
 vnoremap <c-v> "+p
 inoremap <c-c> <Esc>"+ya
 inoremap <c-v> <Esc>"+pa
-
-"new line
-nnoremap n o<Esc>
-nnoremap N O<Esc>
 
 "map record marco to à
 nnoremap à q
