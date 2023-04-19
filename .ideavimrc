@@ -100,7 +100,7 @@ vnoremap <a-h> <gv
 inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
 
 "show error description
-nmap M <action>(ShowErrorDescription)
+nmap <c-m> <action>(ShowErrorDescription)
 
 " reformat file
 nmap <Leader>² <action>(ReformatCode)
