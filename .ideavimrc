@@ -36,12 +36,10 @@ map <Leader>s <Plug>(easymotion-s)
 "enter visual block
 nnoremap <Leader>v <c-v>
 
-nnoremap <c-c> "+y
-nnoremap <c-v> "+p
-vnoremap <c-c> "+y
-vnoremap <c-v> "+p
-inoremap <c-c> <Esc>"+ya
-inoremap <c-v> <Esc>"+pa
+vmap <c-c> <action>(EditorCopy)<esc>
+vmap <c-v> <action>(EditorPaste)<esc>
+imap <c-c> <action>(EditorCopy)
+imap <c-v> <action>(EditorPaste)
 
 "map record marco to à
 nnoremap à q
@@ -98,6 +96,9 @@ vnoremap <a-h> <gv
 
 "règle cette faute de m*rde
 inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
+
+"show error description
+nmap M <action>(ShowErrorDescription)
 
 " reformat file
 nmap <Leader>² <action>(ReformatCode)
