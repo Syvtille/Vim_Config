@@ -36,6 +36,8 @@ map <Leader>s <Plug>(easymotion-s)
 "enter visual block
 nnoremap <Leader>v <c-v>
 
+nmap <c-c> <action>(EditorCopy)
+nmap <c-v> <action>(EditorPaste)
 vmap <c-c> <action>(EditorCopy)<esc>
 vmap <c-v> <action>(EditorPaste)<esc>
 imap <c-c> <action>(EditorCopy)
