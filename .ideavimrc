@@ -102,6 +102,9 @@ inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
 "show error description
 nmap <c-m> <action>(ShowErrorDescription)
 
+"show refactor options
+nmap <c-h> <action>(Refactorings.QuickListPopupAction)
+
 " reformat file
 nmap <Leader>² <action>(ReformatCode)
 
