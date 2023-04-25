@@ -74,7 +74,7 @@ nmap <C-u> <C-u>jw
 
 "normal find and replace
 nmap <C-f> <action>(Find)
-nmap <C-r> <action>(Replace)
+nmap <C-a-r> <action>(Replace)
  
 " replace the word under cursor in all file
 nnoremap <Leader>r *:%s;;
