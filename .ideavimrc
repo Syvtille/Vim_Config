@@ -116,12 +116,18 @@ imap <A-S-j> <action>(MoveStatementDown)
 imap <A-S-k> <action>(MoveStatementUp)
 vmap <A-S-j> <action>(MoveStatementDown)
 vmap <A-S-k> <action>(MoveStatementUp)
-nmap <A-j> <action>(MoveLineDown)==
-nmap <A-k> <action>(MoveLineUp)==
-imap <A-j> <action>(MoveLineDown)<esc>==a
-imap <A-k> <action>(MoveLineUp)<esc>==a
-vmap <A-j> <action>(MoveLineDown)<action>(ReformatCode)
-vmap <A-k> <action>(MoveLineUp)<action>(ReformatCode)
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv==gvgv
+vnoremap <A-k> :m '<-2<CR>gv==gvgv
+"nmap <A-j> <action>(MoveLineDown)==
+"nmap <A-k> <action>(MoveLineUp)==
+"imap <A-j> <action>(MoveLineDown)<action>(ReformatCode)
+"imap <A-k> <action>(MoveLineUp)<action>(ReformatCode)
+"vmap <A-j> <action>(MoveLineDown)<action>(ReformatCode)
+"vmap <A-k> <action>(MoveLineUp)<action>(ReformatCode)
 
 " Clear notifications"
 nmap _n <action>(ClearAllNotifications)
