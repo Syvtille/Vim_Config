@@ -105,6 +105,8 @@ nmap <c-m> <action>(ShowErrorDescription)
 
 "show refactor options
 nmap <c-h> <action>(Refactorings.QuickListPopupAction)
+vmap <c-h> <action>(Refactorings.QuickListPopupAction)
+imap <c-h> <action>(Refactorings.QuickListPopupAction)
 
 " reformat file
 nmap <Leader>² <action>(ReformatCode)
