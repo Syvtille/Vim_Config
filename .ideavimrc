@@ -33,6 +33,9 @@ set tm=5000
 
 map <Leader>s <Plug>(easymotion-s)
 
+"track action id
+nmap <c-a-s-t> <action>(VimFindActionIdAction)
+
 "enter visual block
 nnoremap <Leader>v <c-v>
 
@@ -159,7 +162,8 @@ nmap _s <action>(ToggleFullScreen)
 nmap <Leader>ff <action>(HideAllWindows)
 "Show Panels / Windows Intellij
 nmap <Leader>fs <action>(ActivateSonarLintToolWindow)
-nmap <Leader>fg <action>(ActivateVersionControlToolWindow)
+nmap <Leader>fv <action>(ActivateVersionControlToolWindow)
+nmap <Leader>fg <action>(GitLab.Merge.Request.Show.List)
 nmap <Leader>fc <action>(ActivateCommitToolWindow)
 nmap <Leader>fp <action>(ActivateProjectToolWindow)
 nmap <Leader>fr <action>(ActivateRunToolWindow)
