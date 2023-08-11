@@ -170,6 +170,7 @@ nmap <Leader>fr <action>(ActivateRunToolWindow)
 nmap <Leader>ft <action>(ActivateTerminalToolWindow)
 nmap <Leader>fd <action>(ActivateDebugToolWindow)
 nmap <Leader>fi <action>(ActivateProblemsViewToolWindow)
+nmap <Leader>fn <action>(ActivateNotificationsToolWindow)
 
 "File
 nmap <C-A-S-P> <action>(main.toolbar.Project)
