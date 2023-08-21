@@ -1,12 +1,18 @@
 let mapleader = " "
-set surround
-set commentary
 
-"enter visual block
+set ignorecase
+set smartcase
+set incsearch
+set showmatch
+set tm=500
+
 nnoremap <Leader>v <c-v>
 
-nnoremap <c-c> "+y
-nnoremap <c-v> "+p
+"map record marco to à
+nnoremap à q
+"map mark jump to è
+nnoremap è `
+onoremap è `
 
 map L $
 map H ^
@@ -19,44 +25,46 @@ onoremap Z W
 vnoremap Z W
 nnoremap w zz
 
-"windows save
-nnoremap <c-s> :w<CR>
-inoremap <c-s> <Esc>:w<CR>gi
-vnoremap <c-s> :w<CR>
+"map s to q
+nmap q a<BS>
 
-"center cursor after scroll
-nmap <C-d> <C-d>w
-nmap <C-u> <C-u>w
- 
 " replace the word under cursor in all file
-nnoremap <Leader>r *:%s//
+nnoremap <Leader>r *:%s;;
 
-"règle cette faute de merde
+"add thing at the end of line
+inoremap <c-,> <esc>A,
+nnoremap <c-,> A,<esc>
+inoremap <c-;> <esc>A;
+nnoremap <c-;> A;<esc>
+inoremap <c-4> <esc>A{
+nnoremap <c-4> A{<esc>
+inoremap <c-5> <esc>A(
+nnoremap <c-5> A(<esc>
+
+" better indent
+inoremap <a-h> <esc><<A
+inoremap <a-l> <esc>>>A
+nnoremap <a-h> <<
+nnoremap <a-l> >>
+vnoremap <a-l> >gv
+vnoremap <a-h> <gv
+
+"règle cette faute de m*rde
 inoremap <C-d> <Space><Esc>bhxhi<Space><Esc>els
-
-"surround current word with quotes
-nmap <Leader>o" ysiw"
-nmap <Leader>o' ysiw'
-"unquote current quote
-nmap <Leader>u' ds'
-nmap <Leader>u" ds"
-" switch single quotes to double quotes
-nmap <Leader>i" cs'"
-nmap <Leader>i' cs"'
-
-nnoremap <Leader>v <c-v>
-
-" autoindent all file
-nnoremap <Leader>² gg=G<c-o>
 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv==gvgv
+vnoremap <A-k> :m '<-2<CR>gv==gvgv
+
+" Go to begining of current method
+nmap <Leader>u [m
 
 " go to next or previous tab
-nmap <Leader>k :bn<CR>
-nmap <Leader>j :bp<CR>
+nmap <Leader><S-k> :bn<CR>
+nmap <Leader><S-j> :bp<CR>
 "go to tab number
 nmap <Leader>& 1gt
 nmap <Leader>é 2gt
