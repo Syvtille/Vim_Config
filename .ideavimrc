@@ -114,6 +114,9 @@ imap <c-h> <action>(Refactorings.QuickListPopupAction)
 " reformat file
 nmap <Leader>² <action>(ReformatCode)
 
+" optimize imports
+nmap <Leader><Leader>² <action>(OptimizeImports)
+
 " move lines up and down
 nmap <A-S-j> <action>(MoveStatementDown)
 nmap <A-S-k> <action>(MoveStatementUp)
