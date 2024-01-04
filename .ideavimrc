@@ -10,6 +10,9 @@ Plug 'michaeljsmith/vim-indent-object'
 " source ideavimrc
 nnoremap <Leader><Leader>* :source ~/.ideavimrc<CR>
 
+" open ideavimrc
+nnoremap <Leader>* :e ~/.ideavimrc<CR>
+
 set relativenumber
 set number
 
