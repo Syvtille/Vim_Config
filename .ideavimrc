@@ -86,14 +86,14 @@ nmap <C-a-r> <action>(Replace)
 nnoremap <Leader>r *:%s;;
 
 "add thing at the end of line
-inoremap <c-,> <esc>A,
-nnoremap <c-,> A,<esc>
-inoremap <c-;> <esc>A;
-nnoremap <c-;> A;<esc>
-inoremap <c-4> <esc>A{
-nnoremap <c-4> A{<esc>
-inoremap <c-5> <esc>A(
-nnoremap <c-5> A(<esc>
+imap <c-,> <esc>A,
+nmap <c-,> A,<esc>
+imap <c-;> <esc>A;
+nmap <c-;> A;<esc>
+imap <c-4> <esc>A{
+nmap <c-4> A{<esc>
+imap <c-5> <esc>A(
+nmap <c-5> A(<esc>
 
 " better indent
 inoremap <a-h> <esc><<A
@@ -177,6 +177,7 @@ nmap <Leader>ft <action>(ActivateTerminalToolWindow)
 nmap <Leader>fd <action>(ActivateDebugToolWindow)
 nmap <Leader>fi <action>(ActivateProblemsViewToolWindow)
 nmap <Leader>fn <action>(ActivateNotificationsToolWindow)
+nmap <Leader>fg <action>(ActivateGitHubCopilotChatToolWindow)
 
 "File
 nmap <C-A-S-P> <action>(main.toolbar.Project)
