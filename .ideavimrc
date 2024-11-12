@@ -182,6 +182,7 @@ nmap <Leader>fd <action>(ActivateDebugToolWindow)
 nmap <Leader>fi <action>(ActivateProblemsViewToolWindow)
 nmap <Leader>fn <action>(ActivateNotificationsToolWindow)
 nmap <Leader>fg <action>(ActivateGitHubCopilotChatToolWindow)
+nmap <Leader>fx <action>(ActivateNxConsoleToolWindow)
 
 "File
 nmap <C-A-S-P> <action>(main.toolbar.Project)
